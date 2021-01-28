@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1096535325692",
+    "firebase_url": "https://cashpoint-app.firebaseio.com",
+    "project_id": "cashpoint-app",
+    "storage_bucket": "cashpoint-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096535325692:android:7aa17340648cf640fe1079",
+        "android_client_info": {
+          "package_name": "com.reemsib.carscashpoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096535325692-0jddml85r378bhvpa6qqhbklk9jpd1kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA9exKL1xFqJkpGbd8ptIzUxS9bnee8qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096535325692-0jddml85r378bhvpa6qqhbklk9jpd1kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

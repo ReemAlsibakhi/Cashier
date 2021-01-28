@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AGAPE DATA</string>
+    <string name="add_png">Add .Png</string>
+    <string name="mobile_number">رقم موبايلك</string>
+    <string name="send_me_offer">ابعتلي العروض</string>
+    <string name="choose_car">من فضلك اختار سيارتك</string>
+    <string name="choose_model">من فضلك اختار موديلها</string>
+    <string name="enter_mobile">من فضلك أدخل رقم موبايلك</string>
+    <string name="add_success">تم تسجيل معلوماتك </string>
+    <string name="error_add">يوجد خطأ في تسجيل المعلومات</string>
+    <string name="your_car">سيارتك</string>
+    <string name="model">موديلها</string>
+    <string name="upload_success">تم تحميل الصورة بنجاح</string>
+    <string name="upload_fail">فشل تحميل الصورة</string>
+    <string name="enter_mobile_valid">من فضلك أدخل رقم صالح</string>
+    <string name="connect_failed">يوجد خطأ بالاتصال بالانترنت</string>
+
+</resources>

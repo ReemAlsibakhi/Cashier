@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="rtl"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/color_transparent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+        <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mstart50"
+        android:layout_marginEnd="@dimen/m_end50"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_company"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mob_height_relative"
+                android:background="@drawable/bg_spinner"
+                android:padding="@dimen/padding10">
+                <TextView
+                    android:id="@+id/you_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/mob_height_relative"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/a_jannat_it_bold"
+                    android:text="@string/your_car"
+                    android:textSize="@dimen/mob_size_text"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/me_mob_arrow"
+                    android:src="@drawable/ic_mob_polygon_3" />
+
+            </RelativeLayout>
+
+            <GridView
+            android:id="@+id/gv_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_company"
+            android:layout_marginBottom="20dp"
+            android:elevation="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/rl_model"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mob_height_relative"
+                android:layout_marginTop="@dimen/mt_mob_model"
+                android:background="@drawable/bg_spinner"
+                android:padding="@dimen/padding10"
+                android:layout_below="@id/rl_company">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/me_mob_arrow"
+                    android:src="@drawable/ic_mob_polygon_3" />
+
+                <TextView
+                    android:id="@+id/tv_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/a_jannat_it_bold"
+                    android:text="@string/model"
+                    android:textSize="@dimen/mob_size_text"/>
+
+            </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_model"
+            android:layout_marginBottom="20dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+
+            />
+
+            <EditText
+                android:id="@+id/ed_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mt_mob_model"
+                android:background="@drawable/bg_edit"
+                android:ems="10"
+                android:imeOptions="flagNoExtractUi"
+                android:hint="@string/mobile_number"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:padding="@dimen/padding10"
+                android:textSize="@dimen/mob_size_text"
+              android:layout_below="@id/rl_model" />
+
+            <Button
+                android:id="@+id/btn_sendOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mt_mob_model"
+                android:background="@drawable/trans_drawable"
+                android:text="@string/send_me_offer"
+                android:padding="@dimen/padding10"
+                android:textColor="@color/colorYellow"
+                android:textSize="@dimen/mob_size_text"
+                android:layout_below="@+id/ed_mobile" />
+
+
+    </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/img_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding10"
+            android:layout_marginEnd="@dimen/padding10"
+            android:layout_marginBottom="@dimen/padding10"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/btn_addImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_mob_add"
+            android:src="@drawable/ic_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="@dimen/width_mob_load"
+            android:layout_height="@dimen/height_mob_load"
+            android:visibility="gone"
+            app:indicatorColor="@color/colorYellow"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:layout_constraintBottom_toBottomOf="@+id/img_car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi2"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="@dimen/width_mob_load"
+            android:layout_height="@dimen/height_mob_load"
+            android:visibility="gone"
+            app:indicatorColor="@color/colorYellow"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:layout_constraintBottom_toBottomOf="@+id/img_car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
